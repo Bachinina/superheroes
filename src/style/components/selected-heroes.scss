@@ -1,0 +1,55 @@
+.selected-heroes {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 168px;
+  padding: 15px;
+  padding-left: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(180deg, #555761 -51.19%, #2B2D35 100%);
+}
+
+.selected-heroes__container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  list-style: none;
+  overflow-x: auto;
+
+  .card-hero {
+    width: 72px;
+    margin: 0;
+    margin-right: 16px;
+
+    p {
+      display: none;
+    }
+  }
+
+  .card-hero__calc.visible {
+    visibility: visible;
+  }
+
+  .card-hero__img {
+    width: 72px;
+    height: 100px;
+    margin: 0;
+  }
+}
+
+.selected-heroes__greting {
+  display: block;
+  width: 100%;
+  margin: auto;
+  font-size: 18px;
+  line-height: normal;
+  text-align: center;
+  color: #4B4E5C;
+}
+
+.card-hero + .selected-heroes__greting {
+  display: none;
+}

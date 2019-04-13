@@ -1,0 +1,28 @@
+.catalog-heroes {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .card-hero:hover {
+    .card-hero__button-close {
+      display: none;
+    }
+  }
+
+  .card-hero__button-close {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-heroes {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 25px;
+    order: 1;
+  }
+}

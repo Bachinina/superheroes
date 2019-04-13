@@ -1,0 +1,42 @@
+.toggle__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  
+  input {
+    display: none;
+  }
+}
+
+.toggle {
+  width: 120px;
+  height: 75px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  &:nth-of-type(1) {
+    margin-right: 15px;
+    background: url('../img/dc-logo.png') no-repeat 50% 50%;
+  }
+
+  &:nth-of-type(2) {
+    background: url('../img/marvel-logo.png') no-repeat 50% 50%;
+    background-size: 110px 50px;
+  }
+}
+
+.toggle.active {
+  opacity: 0.2;
+}
+
+@media (min-width: $tablet-width) {
+  .toggle__container {
+    margin-top: 0;
+  }
+  
+  .toggle--dc {
+    margin-right: 35px;
+  }
+}

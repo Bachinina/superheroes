@@ -1,0 +1,94 @@
+.card-hero {
+  position: relative;
+  width: 64px;
+  margin: 0 4px;
+  margin-bottom: 15px;
+
+  p {
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+}
+
+.card-hero__img {
+  box-sizing: border-box;
+  width: 64px;
+  height: 100px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  background-color: #C4C4C4;
+
+  img {
+    width: 100%;
+    height: 100px;
+    border-radius: 8px;
+  }
+}
+
+.card-hero__calc {
+  visibility: hidden;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 1px;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #00C35A;
+  color: #FFFFFF;
+}
+
+.card-hero__button-close {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  content: '';
+
+  box-sizing: border-box;
+  display: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 10px;
+  text-align: center;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
+  color: #FFFFFF;
+  outline: none;
+}
+
+.card-hero__button-close:active {
+  opacity: 0.7;
+} 
+
+.card-hero:hover {
+  .card-hero__button-close {
+    display: block;
+  }
+}
+
+@media (min-width: $mobile-middle-width) {
+  .card-hero {
+    width: 72px;
+    margin: 0 7px;
+    margin-bottom: 15px;
+  }
+
+  .card-hero__img {
+    width: 72px;
+    height: 100px;
+
+    img {
+      width: 100%;
+      max-height: 100px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.search {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 335px;
+  height: 55px;
+  margin-bottom: 30px;
+  padding: 18px 15px;
+  padding-right: 50px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: url('../img/icon-loupe.png') no-repeat 95% 50%;
+  background-color: #4B4E5C;
+  color: #FFFFFF;
+  outline: none;
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .search {
+    align-self: center;
+    margin-bottom: 0;
+    margin-right: 60px;
+  }
+}

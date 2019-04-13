@@ -1,0 +1,11 @@
+.app__selection {
+  padding: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .app__selection {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
